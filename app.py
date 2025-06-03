@@ -6,7 +6,7 @@ import os
 
 # Load model (update path if needed)
 MODEL_PATH = os.path.join(os.path.dirname(__file__), "model_1_03333330.h5")
-model = tf.keras.models.load_model(MODEL_PATH)
+model = tf.keras.models.load_model(MODEL_PATH, compile=False)
 
 # Update this list with your actual class names in the order your model predicts them
 class_names = [
